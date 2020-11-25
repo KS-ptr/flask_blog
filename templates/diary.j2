@@ -1,0 +1,21 @@
+{% extends "diary.html" %}
+
+{% block diary %}
+    {% for diary in diaries %}
+        <div>
+            <span class="diary-date">{{ diary["date"] }}</span>
+            {% for category in diary["categories"] %}
+                <span class="diary-category">
+                    <a href="/diary?c={{ category['id']}}">{{ category["name"] }}</a>
+                </span>
+            {% endfor %}
+        </div>
+        <div class="diary-body">{{ diary["body"] }}</div>
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+{% if next_page %}
+    <a href="diary?p={{ pager + 1 }}">次のページへ</a>
+{% endif %}
+{% endblock %}

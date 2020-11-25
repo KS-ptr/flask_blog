@@ -1,0 +1,6 @@
+.vscode
+config.ini
+Pipfile.lock
+tmp
+**/__pycache__
+diary_db
