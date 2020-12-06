@@ -1,3 +1,4 @@
+from types import MethodType
 from flask import Flask, render_template, request, jsonify
 from json import load
 import vars_config
@@ -36,15 +37,15 @@ def render_admin():
 	return render_template('manage.j2', title='管理者用')
 
 # IDから日記を取得
-@app.route("/diary_db/<int:id>", METHODS=["GET"])
+@app.route("/diary_db/<int:id>", methods=["GET"])
 def call_get_diary(id):
 	return jsonify(get_from_id(id))
 
 # 日記の更新
-@app.route("/diary_db", METHODS=["POST"])
+@app.route("/diary_db/<int:id>", methods=["POST"])
 def call_post_diary(id):
 	req_json = request.get_json()
-	return jsonify(post_diary(req_json))
+	return jsonify(post_diary(id, req_json))
 
 if __name__ == "__main__":
 	app.debug = True
