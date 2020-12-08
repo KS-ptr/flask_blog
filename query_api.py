@@ -1,4 +1,3 @@
-from configparser import RawConfigParser
 from json import load, dumps, dump
 import vars_config as c
 
