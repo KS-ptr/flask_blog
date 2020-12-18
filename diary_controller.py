@@ -1,7 +1,7 @@
 import datetime
 from json import load, dump
 import vars_config as c
-from query_api import insert, select, update, which_upsert, delete
+from query_api import insert, select, update, delete
 
 encoding = c.encoding
 diary_filename = c.db_path + c.diary_db_filename
