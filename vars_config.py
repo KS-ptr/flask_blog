@@ -8,5 +8,6 @@ mail_address = config.get("settings", "mail_address")
 entries_in_page = int(config.get("settings", "entries_on_one_page"))
 
 db_path = config.get("db_settings", "db_directory_path")
+auth_filename = config.get("db_settings", "auth")
 category_filename = config.get("db_settings", "category")
 diary_db_filename = config.get("db_settings", "diary")
