@@ -34,8 +34,8 @@ def render_diary():
 	diary_list_on_page = diary_list[pager * entries:(pager + 1) * entries]
 	return render_template('diary.j2', title='プテラノーツ', diaries=diary_list_on_page, pager=pager, next_page=next_page)
 
-@auth.login_required
 @app.route("/manage")
+@auth.login_required
 def render_admin():
 	return render_template('manage.j2', title='管理者用')
 
