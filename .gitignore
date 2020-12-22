@@ -1,4 +1,6 @@
+.venv
 .vscode
+.vs
 config.ini
 Pipfile.lock
 tmp
