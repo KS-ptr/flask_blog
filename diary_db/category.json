@@ -1,0 +1,37 @@
+[
+    {
+        "id": -1,
+        "category": "total",
+        "count": 4
+    },
+    {
+        "id": 1,
+        "category": "日記",
+        "count": 2
+    },
+    {
+        "id": 2,
+        "category": "夢",
+        "count": 2
+    },
+    {
+        "id": 3,
+        "category": "Python",
+        "count": 0
+    },
+    {
+        "id": 4,
+        "category": "Linux",
+        "count": 0
+    },
+    {
+        "id": 5,
+        "category": "Ansible",
+        "count": 0
+    },
+    {
+        "id": 6,
+        "category": "C++",
+        "count": 0
+    }
+]

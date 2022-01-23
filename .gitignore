@@ -1,7 +1,7 @@
-.vscode
-config.ini
+# .vscode
+# config.ini
 Pipfile.lock
 tmp
 **/__pycache__
-diary_db
-diary_db_log
+# diary_db
+# diary_db_log

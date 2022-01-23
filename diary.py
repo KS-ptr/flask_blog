@@ -1,4 +1,3 @@
-from types import MethodType
 from flask import Flask, render_template, request, jsonify
 from json import load
 import vars_config as c
