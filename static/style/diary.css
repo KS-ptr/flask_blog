@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeffff;
+}
+
+.diary {
+    width: 50%;
+    margin-left: 4px;
+}
+
+.diary-date {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 4px;
+    margin-right: 16px;
+}
+
+.diary-category {
+    font-size: 14px;
+    background-color: #eeeeee;
+    padding: 2px 16px;
+    margin-left: 4px;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.diary-body {
+    font-size: 15px;
+}
+
+footer {
+    margin-top: 8px;
+    font-size: 16px;
+    width: 50%;
+    text-align: right;
+}
